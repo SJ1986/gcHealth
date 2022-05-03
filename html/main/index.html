@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+    <link rel="stylesheet" href="../resource/css/common.css">
+    <script type="text/javascript" src="../resource/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../resource/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/common.js"></script>
+    <title>GC녹십자 헬스케어</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-inner">
+                <div class="header-top">
+                    <h1>
+                        <a href="" class="d-flex align-center">
+                            <span class="img-wrap"><img src="../resource/image/common/img-logo.png" alt="GC케어"></span>
+                            <span>서울시 직원 헬스케어 서비스</span>
+                        </a>
+                    </h1>
+                </div>
+                <div class="gnb">
+                    <ul>
+                        <li><button type="button">HOME</button></li>
+                    </ul>
+                    <ul>
+                        <li><button type="button">서비스 안내</button></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button type="button">건강정보</button>
+                            <ul class="gnb-depth">
+                                <li><a href="">최신 건강정보</a></li>
+                                <li><a href="">의학뉴스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button type="button">건강체크</button>
+                            <ul class="gnb-depth">
+                                <li><a href="">암 위험도 체크</a></li>
+                                <li><a href="">성인질환 위험도 체크</a></li>
+                                <li><a href="">치매 예방 자가 체크</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a id="cd-menu-trigger" href="#0" class=""><span class="cd-menu-icon"></span></a>
+                <div id="cd-lateral-nav">
+                    <div class="cd-lateral-top"></div>
+                    <ul class="cd-navigation">
+                       <li>
+                           <a href="/">HOME</a>
+                       </li>
+                          <li class="item-has-children">
+                           <a href="/m_info/INFO_main.asp">서비스 안내/신청</a>
+                           <ul class="sub-menu lists lists--dot">
+                               <li><a href="/m_info/INFO_main.asp">서비스 안내</a></li>
+                               <li><a href="javascript:loadLogin();">서비스 신청</a></li>
+                           </ul>
+                       </li>
+               
+                           <li class="item-has-children">
+                               <a href="/M_health/health_main.asp">건강정보</a>
+                               <ul class="sub-menu lists lists--dot">
+                                   <li><a href="/M_health/health_main.asp">최신 건강정보</a></li>
+                                   <li><a href="/M_health/health_main.asp?run_asp=/M_health/news/news.asp">의학뉴스</a></li>
+                               </ul>
+                           </li>
+               
+                           <li class="item-has-children">
+                               <a href="/M_check/check_main.asp">건강체크</a>
+                               <ul class="sub-menu lists lists--dot">
+                                   <li><a href="/M_check/check_main.asp?run_asp=/M_check/CAN/CAN_VIW.ASP">암 위험도 체크</a></li>
+                                   <li><a href="/M_check/check_main.asp?run_asp=/M_check/disease/disease_view.asp">성인질환 위험도 체크</a></li>
+                               </ul>
+                           </li>
+
+                   </ul><!-- end: cd-navigation -->               
+               
+               </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <section class="container">
+            <section class="container-inner">
+                <section class="content">
+                    <article class="visual-wrap">
+                        <div class="inner visual-txt">
+                            <h3>
+                                <em>GC 녹십자 </em>
+                                서울시 직원 헬스케어 서비스
+                            </h3>
+                            <p>건강관리서비스의 전문 의료진이 고객님의 건강을 지켜드립니다.</p>
+                        </div>
+                        <span class="hidden">GC 녹십자 서울시 직원 헬스케어 서비스 건강관리서비스의 전문 의료진이 고객님의 건강을 지켜드립니다.</span>
+                    </article>
+                    <article class="notice-wrap d-flex">
+                        <div class="notice-item notice-item--healthyInfo">
+                            <div class="top">
+                                <span class="img-wrap">
+                                    <!-- <img src="../resource/image/main/img-noticeItem-01.jpg" alt=""> -->
+                                    <p class="img-txt">
+                                        <span>최신 건강정보</span>
+                                        전문의와 운동, 영양, 질병 전문가가<br/>직접 작성한 최신 건강정보입니다.
+                                    </p>
+                                </span>
+                            </div>
+                            <ul class="lists lists--dot">
+                                <li><a href="">[건강] 봄철 발병률이 높아지는 안구건조증</a></li>
+                                <li><a href="">[전문의칼럼] 한가지 음식으로 하는 원푸드...</a></li>
+                            </ul>
+                        </div>
+                        <div class="notice-item notice-item--mediNews">
+                            <div class="top">
+                                <span class="img-wrap">
+                                    <!-- <img src="../resource/image/main/img-noticeItem-02.jpg" alt=""> -->
+                                    <p class="img-txt">
+                                        <span>의학뉴스</span>
+                                        유행하는 질병정보, 계절별 건강관리를<br/>위한 최신 의학 뉴스입니다.
+                                    </p>
+                                </span>
+                            </div>
+                            <ul class="lists lists--dot">
+                                <li><a href="">재택 끝나가고 회식 줄줄이 대기... 직장인들...</a></li>
+                                <li><a href="">사무실 다시 여는 美 IT 공룡들…직원들은...</a></li>
+                            </ul>
+                        </div>
+                        <div class="notice-item notice-item--healthyCheck">
+                            <div class="top">
+                                <span class="img-wrap">
+                                    <!-- <img src="../resource/image/main/img-noticeItem-03.jpg" alt=""> -->
+                                    <p class="img-txt">
+                                        <span>건강체크</span>
+                                        나의 질병 발생 위험도는 얼마나 될까요?<br/>건강 체크하고 관리해보세요.
+                                    </p>
+                                </span>
+                            </div>
+                            <ul class="lists lists--dot">
+                                <li><a href="">암 발병 위험도 체크</a></li>
+                                <li><a href="">성인질환 위험도 체크</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="treatment-wrap">
+                        <div class="treatment-inner d-flex">
+                            <a href="">
+                                <span class="img-wrap">
+                                    <img src="../resource/image/main/img-treatment--01.png" alt="">
+                                </span>
+                                <span>건강상담</span>
+                            </a>
+                            <a href="">
+                                <span class="img-wrap">
+                                    <img src="../resource/image/main/img-treatment--02.png" alt="">
+                                </span>
+                                <span>병원안내 및 예약</span>
+                            </a>
+                            <a href="">
+                                <span class="img-wrap">
+                                    <img src="../resource/image/main/img-treatment--03.png" alt="">
+                                </span>
+                                <span>편의서비스</span>
+                            </a>
+                            <a href="">
+                                <span class="img-wrap">
+                                    <img src="../resource/image/main/img-treatment--04.png" alt="">
+                                </span>
+                                <span>전문 간호사 방문</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="banner-wrap">
+                        <h4>
+                            서울시 직원 전용 
+                            <span>건강관리 콜센터</span> 
+                            <em>1577-1715</em>
+                        </h4>
+                        <div class="info">
+                            <p><span>상담시간 :</span> 건강상담은 24시간 연중무휴</p>
+                            <p><span>평일</span> 09:00~19:00</p>
+                            <p><span>공휴일은 건강상담만 가능</span> (진료예약 및 기타서비스는 평일 업무시간에만 가능)</p>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </section>
+
+        <footer>
+            <div class="footer-inner d-flex">
+                <span class="img-wrap">
+                    <img src="../resource/image/main/img-logo--footer.png" alt="">
+                </span>
+                <div class="footer-info">
+                    <ul class="footer-info__link d-flex">
+                        <li>
+                            <a href="">서울시</a>
+                        </li>
+                        <li>
+                            <a href="">GC케어</a>
+                        </li>
+                    </ul>
+                    <address>
+                        Copyright © 2022 GC Biopharma corporate./<br/>© GC Care. All Rights Reserved.
+                    </address>
+                    <p class="copyright">
+                        <img src="../resource/image/common/icon-caution--green.png" alt="">
+                        본 서비스는 ㈜GC케어에서 제공합니다.
+                    </p>
+                </div>
+                <div class="footer-banner">
+                    <a href="">
+                        <img src="../resource/image/common/img-footer-banner--01.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../resource/image/common/img-footer-banner--02.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="Viewport" />
+    <link rel="stylesheet" href="../resource/css/common.css">
+    <script type="text/javascript" src="../resource/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../resource/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/common.js"></script>
+    <title>미래에셋생명 헬스케어 &lt 서비스안내</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-inner">
+                <div class="header-top">
+                    <h1>
+                        <a href="" class="d-flex align-center">
+                            <span class="img-wrap"><img src="../resource/image/common/img-logo.png" alt=""></span>
+                            <span>서울시 직원 헬스케어 서비스</span>
+                        </a>
+                    </h1>
+                </div>
+                <div class="gnb">
+                    <ul>
+                        <li><button type="button">HOME</button></li>
+                    </ul>
+                    <ul>
+                        <li><button type="button">서비스 안내</button></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button type="button">건강정보</button>
+                            <ul class="gnb-depth">
+                                <li><a href="">최신 건강정보</a></li>
+                                <li><a href="">의학뉴스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button type="button">건강체크</button>
+                            <ul class="gnb-depth">
+                                <li><a href="">암 위험도 체크</a></li>
+                                <li><a href="">성인질환 위험도 체크</a></li>
+                                <li><a href="">치매 예방 자가 체크</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a id="cd-menu-trigger" href="#0" class=""><span class="cd-menu-icon"></span></a>
+                <div id="cd-lateral-nav">
+                    <div class="cd-lateral-top"></div>
+                    <ul class="cd-navigation">
+                       <li>
+                           <a href="/">HOME</a>
+                       </li>
+                          <li class="item-has-children">
+                           <a href="">서비스 안내/신청</a>
+                           <ul class="sub-menu lists lists--dot">
+                               <li><a href="">서비스 안내</a></li>
+                               <li><a href="">서비스 신청</a></li>
+                           </ul>
+                       </li>
+               
+                           <li class="item-has-children">
+                               <a href="">건강정보</a>
+                               <ul class="sub-menu lists lists--dot">
+                                   <li><a href="">최신 건강정보</a></li>
+                                   <li><a href="">의학뉴스</a></li>
+                               </ul>
+                           </li>
+               
+                           <li class="item-has-children">
+                               <a href="">건강체크</a>
+                               <ul class="sub-menu lists lists--dot">
+                                   <li><a href="">암 위험도 체크</a></li>
+                                   <li><a href="">성인질환 위험도 체크</a></li>
+                               </ul>
+                           </li>
+
+                   </ul><!-- end: cd-navigation -->               
+               
+               </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <section class="container">
+            <section class="location">
+                <div class="location-inner d-flex">
+                    <a href="location-home" title="홈으로 이동">
+                        <img src="../resource/image/sub/icon/icon-home.png" alt="">
+                    </a>
+                    <div class="location-depth">
+                        <button type="button">
+                            건강체크
+                        </button>
+                        <div class="location-depth__child">
+                            <a href="" title="" target="_self">서비스 안내</a>
+                            <a href="" title="" target="_self">건강정보</a>
+                            <a href="" title="" target="_self">건강체크</a>
+                        </div>
+                    </div>
+                    <div class="location-depth current">
+                        <button type="button">
+                            암 위험도 체크
+                        </button>
+                        <div class="location-depth__child">
+                            <a href="" title="페이지 이동">암 위험도 체크</a>
+                            <a href="" title="페이지 이동">성인질환 위험도 체크</a>
+                            <a href="" title="페이지 이동">치매 예방 자가 체크</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container-inner">
+                <section class="content">
+                    <p class="sub-tit">암 위험도 체크</p>
+                    <div class="inner">
+                        <div class="tab-wrap" id="subTab_healthCheck">
+                            <div class="tab-link">
+                                <a href="" class="on" title="페이지이동">폐암</a>
+                                <a href="" title="페이지이동">대장암</a>
+                                <a href="" title="페이지이동">자궁경부암</a>
+                                <a href="" title="페이지이동">유방암</a>
+                                <a href="" title="페이지이동">난소암</a>
+                            </div>
+                            <p class="txt-reference">
+                                간단한 문항으로 건강상태를 체크해보시기 바랍니다.<br/>
+                                건강체크는 의사의 진료를 대신할 수 없습니다. 참고용으로만 활용하시기 바랍니다.                                
+                            </p>
+                            <div class="tab-cont">
+                                <section class="question-wrap">
+                                    <article class="question-item">
+                                        <p>1. 가족 및 가까운 친척(부모, 형제자매, 이모, 고모, 삼촌)중에 폐암 진단을 받은 사람이 있었습니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer01" id="lungCancer-0101">
+                                                <label for="lungCancer-0101" >
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer01" id="lungCancer-0102">
+                                                <label for="lungCancer-0102" >
+                                                    아니오
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>2. 현재 만 나이가 어떻게 되십니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer02" id="lungCancer-0201">
+                                                <label for="lungCancer-0201">
+                                                    39세 이하
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer02" id="lungCancer-0202">
+                                                <label for="lungCancer-0202">
+                                                    40~49세
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer02" id="lungCancer-0203">
+                                                <label for="lungCancer-0203">
+                                                    50세 이상
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>3. 현재 담배를 피우십니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer03" id="lungCancer-0301">
+                                                <label for="lungCancer-0301">
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer03" id="lungCancer-0302">
+                                                <label for="lungCancer-0302">
+                                                    아니오
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>4. 현재 흡연을 하신다면, 하루에 얼마나 피우십니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer04" id="lungCancer-0401">
+                                                <label for="lungCancer-0401">
+                                                    1갑이하
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer04" id="lungCancer-0402">
+                                                <label for="lungCancer-0402">
+                                                    1갑
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer04" id="lungCancer-0403">
+                                                <label for="lungCancer-0403">
+                                                    1갑 반
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer04" id="lungCancer-0404">
+                                                <label for="lungCancer-0404">
+                                                    1갑 반 이상
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>5. 과거에 흡연을 하였으나, 현재 금연상태이십니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer05" id="lungCancer-0501">
+                                                <label for="lungCancer-0501">
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer05" id="lungCancer-0502">
+                                                <label for="lungCancer-0502">
+                                                    아니오
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>6. 과거에 흡연을 하였으나, 현재 금연중이라면 언제 담배를 끊으셨습니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer06" id="lungCancer-0601">
+                                                <label for="lungCancer-0601">
+                                                    5년 미만
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer06" id="lungCancer-0602">
+                                                <label for="lungCancer-0602">
+                                                    6-10년 전 미만
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer06" id="lungCancer-0603">
+                                                <label for="lungCancer-0603">
+                                                    11-20년 전 미만
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer06" id="lungCancer-0604">
+                                                <label for="lungCancer-0604">
+                                                    21년 전
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>7. 흡연자와 같이 사십니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer07" id="lungCancer-0701">
+                                                <label for="lungCancer-0701">
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer07" id="lungCancer-0702">
+                                                <label for="lungCancer-0702">
+                                                    아니오
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>8. 술집이나 식당처럼 흡연에 노출되는 환경에서 근무하십니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer08" id="lungCancer-0801">
+                                                <label for="lungCancer-0801">
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer08" id="lungCancer-0802">
+                                                <label for="lungCancer-0802">
+                                                    아니오
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>9. 만성기관지염이나 폐기종 진단을 받으신 적이 있습니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer09" id="lungCancer-0901">
+                                                <label for="lungCancer-0901">
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="lungCancer09" id="lungCancer-0902">
+                                                <label for="lungCancer-0902">
+                                                    아니오
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>10. 아래에 있는 질병을 진단받으신 적이 있습니까? (해당 질병에 체크해 주세요.)</p>
+                                        <div class="form-row row-check mt_20">
+                                            <div class="form-row__div">
+                                                <input type="checkbox" name="cancerCheck" id="cancerCheck-0000">
+                                                <label for="cancerCheck-0000">
+                                                    부갑상선 기능향진증
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="checkbox" name="cancerCheck" id="cancerCheck-0001">
+                                                <label for="cancerCheck-0001">
+                                                    프로락틴 과다증
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="checkbox" name="cancerCheck" id="cancerCheck-0002">
+                                                <label for="cancerCheck-0002">
+                                                    간 질환
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="checkbox" name="cancerCheck" id="cancerCheck-0003">
+                                                <label for="cancerCheck-0003">
+                                                    쿠씽씨 병
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="checkbox" name="cancerCheck" id="cancerCheck-0004">
+                                                <label for="cancerCheck-0004">
+                                                    제1형(인슐린 의존성) 당뇨병
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </section>
+                                <div class="btn-wrap mt_40">
+                                    <button type="button" class="btn btn--view"  data-bs-toggle="modal" data-bs-target="#modal_checkLungCancer">
+                                        결과보기
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <footer>
+            <div class="footer-inner d-flex">
+                <span class="img-wrap">
+                    <img src="../resource/image/main/img-logo--footer.png" alt="">
+                </span>
+                <div class="footer-info">
+                    <ul class="footer-info__link d-flex">
+                        <li>
+                            <a href="">서울시</a>
+                        </li>
+                        <li>
+                            <a href="">GC케어</a>
+                        </li>
+                    </ul>
+                    <address>
+                        Copyright © 2022 GC Biopharma corporate./<br/>© GC Care. All Rights Reserved.
+                    </address>
+                    <p class="copyright">
+                        <img src="../resource/image/common/icon-caution--green.png" alt="">
+                        본 서비스는 ㈜GC케어에서 제공합니다.
+                    </p>
+                </div>
+                <div class="footer-banner">
+                    <a href="">
+                        <img src="../resource/image/common/img-footer-banner--01.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../resource/image/common/img-footer-banner--02.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+
+        <!-- Modal -->
+        <div class="modal fade health" id="modal_checkLungCancer" tabindex="-1" aria-labelledby="modal_checkLungCancerLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-center">
+                    <p class="modal-title" id="modal_checkLungCancerLabel">폐암 위험도</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="py_5">
+                        <h6>
+                            흡연을 하지 않는 당신은 폐암 발생 위험도가 매우 적은 편이라 할 수 있습니다.
+                        </h6>
+                        <p class="txt mt_30">
+                            그러나 본인이 흡연을 하지 않더라도, 주변 사람으로 인한 간접흡연에 의해서도 폐암 발생의 위험이 높아집니다.<br/>
+                            따라서, 주변 사람이 흡연을 하는 경우, 금연할 것을 권하고, 담배 연기에 노출되는 것을 피하셔야 합니다.
+                        </p>
+                        <p class="txt mt_30">
+                            3주 이상 기침이 계속되거나, 각혈, 이유를 알 수 없는 피곤함, 식욕이 떨어지고 체중이 감소되거나,<br/>
+                            목소리가 쉬거나, 계속되는 가슴의 통증 등은 폐암의 발생으로 인한 증상을 의심할 수 있으므로, 이 때는 전문의의 진찰을 받아야 합니다.                    
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

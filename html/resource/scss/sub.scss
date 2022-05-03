@@ -1,0 +1,1061 @@
+@charset "UTF-8";
+@import 'mixin';
+@import 'svg';
+
+/* 서브 */
+.location{  
+    background-color:#002c49;
+    width:100%;
+    height:60px;
+    &-inner{
+        max-width:1080px;
+        margin:0 auto;
+        width:100%;
+        height: 100%;
+        a{
+            @include d-flex;
+            @include align-center;
+            @include justify-center;
+            width:60px;
+            height: 100%;
+        }
+        > a{
+            border-left:1px solid #4d6c80;
+            border-right:1px solid #4d6c80;
+        }
+    }
+    &-depth{
+        @include d-flex;
+        @include justify-start;
+        min-width:24.4rem;
+        height:100%;
+        position:relative;
+        border-right:1px solid #4d6c80;
+        button{
+            width:100%;
+            height:100%;
+            padding:0 3rem;
+            background:#002c49 url('../image/sub/icon/icon-clampDown_g.png') no-repeat 90% center;
+            color:#939da6;
+            font-size:1.6rem;
+            text-align:left;
+        }
+        &__child{
+            @include position(absolute, $t:60px, $l:-1px);
+            display:none;
+            width:calc(100% + 2px);
+            height:auto;
+            z-index: 1;
+            a{
+                @include d-flex;
+                @include align-center;
+                @include justify-start;
+                padding:0 3rem;
+                width:100%;
+                height:60px;
+                font-size:16px;
+                font-weight:500;
+                color:#000;
+                background-color:#fff;
+                box-sizing: border-box;
+                border-left:1px solid #efefef;
+                border-right:1px solid #efefef;
+                border-bottom:1px solid #efefef;
+                text-align:left;
+            }
+        }
+        &.current{
+            button{
+                color:#fff;
+                background:#002c49 url('../image/sub/icon/icon-clampDown.png') no-repeat 90% center;
+            }
+            &.active{
+                button{
+                    background:#002c49 url('../image/sub/icon/icon-clampUp.png') no-repeat 90% center;
+                }
+            }
+        }
+        &.active{
+            button{
+                background-image:url('../image/sub/icon/icon-clampUp_g.png');
+            }
+        }
+    }
+}
+.sub-tit{
+    padding:7rem 0 5.5rem;
+    font-size:5rem;
+    font-weight:700;
+    text-align: center;
+}
+.menu-tit{
+    font-size:3rem;
+    + h4{
+        &.txt{
+            margin-top:4rem;
+            font-size:2.6rem;
+        }
+    }
+}
+.service{
+    &-guide{
+        margin-top:30px;
+        margin-bottom:7rem;
+        border-top:1px solid #000;
+        border-bottom:1px solid #000;
+        article{
+            @include d-flex;
+            + article{
+                border-top:1px solid #e4e8eb;
+            }
+        }
+        &__img{
+            @include d-flex;
+            @include align-center;
+            @include justify-center;
+            width:30rem;
+        }
+    }
+    &-info{
+        width:calc(100% - 30rem);
+        padding:5rem 0 4rem;
+        h4{
+            font-weight:600;
+        }
+        p{
+            margin-top:3rem;
+            font-size:1.8rem;
+            font-weight:500;
+        }
+        ul{
+            margin-top:2.5rem;
+            padding-left:0;
+            li{
+                font-size:1.6rem;
+                &:before{
+                    top:1.2rem;
+                    width:2px;
+                    height:2px;
+                }
+            }
+        }
+        em{
+            display: block;
+            margin-top:10px;
+            padding-right:50px;
+            font-size:14px;
+            text-align: right;
+        }
+        &__tag{
+            @include d-flex;
+            @include align-center;
+            @include justify-center;
+            width:7rem;
+            height:3rem;
+            margin-bottom:1.5rem;
+            font-size:1.6rem;
+            color:#fff;
+            background-color:#017a33;
+        }
+    }
+    &-banner{
+        margin-top:25px;
+        img{
+            width:100%;
+            @include mobileS{
+                display:none;
+            }
+            @include tablet{
+                display:block;
+            }
+        }
+        .m-banner{
+            @include mobileS{
+                display:block;
+            }
+            @include tablet{
+                display:none;
+            }
+        }
+    }
+}
+.sch{
+    &-area{
+        @include d-flex;
+        @include justify-end;
+        > *{
+            @include mobileS{
+                height:40px;
+            }
+            @include tablet{
+                height:55px;
+            }
+        }
+        select{
+            width:20rem;
+            margin-right:10px;
+            font-size:1.6rem;
+            background:url('../image/sub/icon/icon-clampDown--b.jpg') no-repeat 90% center;
+            border:none;
+            border:1px solid #cfcfcf;
+        }
+        .form{
+            &-row{
+                @include d-flex;
+                label{
+                    width:calc(100% - 6.5rem);
+                    height:100%;
+                }
+                &__input{
+                    width:100%;
+                    height:100%;
+                    border:none;
+                    &::placeholder{
+                        font-size:1.6rem;
+                    }
+                }
+                button{
+                    width:6.5rem;
+                    height:100%;
+                    padding:0;
+                    border:none;
+                }
+            }
+        }
+    }
+    &-finder{
+        width:30rem;
+        border:1px solid #cfcfcf;
+    }
+}
+.health{
+    &-info{
+        margin-top:20px;
+        border-top:1px solid #000;
+        border-bottom:1px solid #000;
+        article{
+            padding:30px 0;
+            a{
+                @include d-flex;
+                @include align-center;
+            }
+            + article{
+                border-top:1px solid #e5e5e5;
+            }
+        }
+        &__cont{
+            padding-left:0;
+            margin-left:0;
+            .publisher{
+                @include d-flex;
+                @include align-center;
+                margin-top:20px;
+                p{
+                    @include d-flex;
+                    @include justify-between;
+                    width:100%;
+                    // margin-left:20px;
+                    font-size:16px;
+                    em{
+                        display: block;
+                        // margin-bottom:5px;
+                        font-size:18px;
+                        font-weight:600;
+                        color:#017a33;
+                    }
+                }
+            }
+            h6{
+                @include mobileS{
+                    font-size:3rem;
+                }
+                @include tablet{
+                    font-size:2.2rem;
+                }
+            }
+            .txt{
+                margin-top:15px;
+                line-height:1.5em;
+                @include mobileS{
+                    font-size:14px;
+                    br{
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+    &-view{
+        border-top:1px solid #002c49;
+        border-bottom:1px solid #002c49;
+        h2{
+            font-size:3rem;
+            font-weight:bold;
+            padding-top:5rem;
+            text-align:center;
+        }
+        &__date{
+            margin-top:3.5rem;
+            padding-bottom:5rem;
+            font-size:16px;
+            text-align:center;
+        }
+        &__cont{
+            padding:5rem 0;
+            border-top:1px solid #e5e5e5;
+            border-bottom:1px solid #e5e5e5;
+            .img-wrap{
+                padding-left:0;
+                li{
+                    +li{
+                        margin-left:2rem;
+                    }
+                }
+                img{
+                    width:100%;
+                }
+            }
+            h4{
+                margin-top:5rem;
+                font-weight:600;
+                + p{
+                    margin-top:3rem
+                }
+            }
+            h6{
+                margin-top:5rem;
+            }
+            p{
+                font-size:16px;
+                line-height:1.8em;
+                letter-spacing: -0.05em;
+                + p{
+                    margin-top:3rem;
+                }
+            }
+        }
+        &__writer{
+            @include d-flex;
+            @include align-center;
+            padding:3rem 0;
+            p{
+                margin-left:30px;
+                font-size:18px;
+                span{
+                    display: block;
+                    
+                    font-size:20px;
+                    font-weight:600;
+                }
+                em{
+                    display: block;
+                    margin-top:15px;
+                    font-size:18px;
+                    color:#787878;
+                }
+            }
+        }
+    }
+    &-checkList{
+        @include d-flex;
+        > div{
+            width:33.3%;
+            + div{
+                margin-left:3rem;
+            }
+        }
+        .health{
+            &-item{
+                position:relative;
+                height:453px;
+                padding:8rem 0;
+                background-size:cover;
+                text-align: center;
+                h2{
+                    transition:all .5s ease-in-out;
+                }
+                &--cancer{
+                    background-image:url('../image/sub/img-healthCheck-01.jpg');
+                    background-repeat:no-repeat;
+                    background-position:0 0;
+                }
+                &--adultSick{
+                    background-image:url('../image/sub/img-healthCheck-02.jpg');
+                    background-repeat:no-repeat;
+                    background-position:0 0;
+                }
+                &--dementia{
+                    background-image:url('../image/sub/img-healthCheck-03.jpg');
+                    background-repeat:no-repeat;
+                    background-position:0 0;
+                }
+                p{
+                    margin-top:35px;
+                    margin-bottom:30px;
+                    color:#fff;
+                    font-size:18px;
+                    opacity:0;
+                    visibility:hidden;
+                    transition:all .5s ease-in-out;
+                    line-height:1.8em;
+                }
+                a{
+                    display: inline-block;
+                    width:170px;
+                    height:50px;
+                    color:#fff;
+                    border:1px solid #fff;
+                    font-size:16px;
+                    opacity:0;
+                    visibility:hidden;
+                    line-height: 50px;
+                    transition:all .5s ease-in-out
+                }
+            }
+        }
+    }
+    &-news{
+        border-top:1px solid #000;
+        border-bottom:1px solid #000;
+        article{
+            a{
+                @include d-flex;
+                @include align-center;
+                @include justify-between;
+                padding:30px 58px;
+                p{
+                    display:block;
+                    font-size:22px;
+                    font-weight:600;
+                    span{
+                        display:block;
+                        margin-top:10px;
+                        font-size:18px;
+                    }
+                    em{
+                        display:block;
+                        margin-top:5px;
+                        font-size:16px;
+                    }
+                }
+            }
+            + article{
+                border-top:1px solid #e5e5e5;
+            }
+        }
+    }
+}
+.btn-wrap{
+    @include d-flex;
+    @include justify-center;
+    @at-root .btn{
+        height:50px;
+        font-size:16px;
+        border:1px solid #cfcfcf;
+        &--list{
+            width:120px;
+        }
+        &--view{
+            width:150px;
+            border:1px solid #002c49;
+            border-radius:0;
+            color:#002c49;
+            font-size:18px;
+            font-weight:500;
+        }
+    }
+}
+.tab{
+    &-wrap{
+        width:100%;
+        padding:0;
+        margin-top:0;
+    }
+    &-link{
+        @include d-flex;
+        @include justify-between;
+        a{
+            width:100%;
+            height:63px;
+            margin:0;
+            font-size:18px;
+            font-weight:500;
+            background-color:#fff;
+            border:1px solid #e3e7ea;
+            border-bottom:1px solid #017a33;
+            color:#000;
+            + a{
+                margin-left:0;
+                border-left:none;
+            }
+            &.on{
+                font-size:22px;
+                font-weight:500;
+                color:#fff;
+                border:none;
+                background-color:#017a33;
+            }
+        }
+    }
+    &-cont{
+        padding:0;
+    }
+}
+.txt{
+    &-reference{
+        padding:55px 0;
+        font-size:18px;
+        color:#787878;
+        text-align: center;
+    }
+}
+.question{
+    &-wrap{
+        padding:70px 50px;
+        border-top:1px solid #e3e7ea;
+        border-bottom:1px solid #000;
+        box-sizing: border-box;
+        
+    }
+    &-item{
+        >p{
+            font-size:18px;
+            font-weight:500;
+            color:#000;
+        }
+        + article{
+            margin-top:65px;
+        }
+    }
+}
+.form{
+    &-row{
+        @include d-flex;
+        @include align-center;
+        margin-left:-5rem;
+        
+        &__div{
+            min-width:200px;
+            margin-left:5rem;
+            margin-top:2rem;
+            // &:first-child{
+            //     margin-left:0;
+            // }
+        }
+        input[type="radio"]{
+            display:none;
+            + label{
+                display:inline-block;
+                vertical-align: middle;
+                width:auto;
+                font-size:18px;
+                font-weight:300;
+                &::before{
+                    display:inline-block;
+                    vertical-align: middle;
+                    width:20px;
+                    height:20px;
+                    margin-top:-3px;
+                    @extend .icon, .icon-radio;
+                    content:"";
+                }
+            }
+            &:checked{
+                +label{
+                    &::before{
+                        @extend .icon, .icon-radioOn;
+                    }
+                }
+            }
+        }
+        input[type="checkbox"]{
+            display:none;
+            + label{
+                display:inline-block;
+                vertical-align: middle;
+                width:auto;
+                font-size:18px;
+                font-weight:300;
+                &::before{
+                    display:inline-block;
+                    vertical-align: middle;
+                    width:20px;
+                    height:20px;
+                    margin-top:-3px;
+                    border:1px solid #b6b6b6;
+                    border-radius:3px;
+                    @extend .icon, .icon-check;
+                    content:"";
+                }
+            }
+            &:checked{
+                +label{
+                    &::before{
+                        @extend .icon, .icon-checkOn;
+                    }
+                }
+            }
+        }
+        &.row-check{
+            flex-wrap:wrap;
+            input{
+                min-width:auto;
+            }
+        }
+    }
+}
+.modal{
+    &#modal_checkLungCancer{
+        .modal-dialog{
+            max-width:108rem;
+        }
+    }
+    &-content{
+        padding:5rem 5rem 8rem 5rem;
+    }
+    &-header{
+        padding:0;
+        padding-bottom:50px;
+        border-bottom:1px solid #000;
+        text-align: center;
+        .btn-close{
+            width:2.5rem;
+            height:2.5rem;
+            margin-bottom:6rem;
+            padding:0;
+            background-size:cover;
+            opacity:1;
+        }
+    }
+    &-title{
+        margin-left:auto;
+        font-size:40px;
+        font-weight:700;
+    }
+    &-body{
+        padding:0;
+        border-bottom:1px solid #000;
+    }
+    &-footer{
+
+    }
+}
+
+/* HOVER ======================================================================================================= */
+@include media-breakpoint-up(lg){
+    .health{
+        &-checkList{
+            .health{
+                &-item{
+                    &:hover{
+                        h2{
+                            position:relative;
+                            color:#fff;
+                            transition:all .5s ease-in-out;
+                            z-index:1;
+                        }
+                        p{
+                            position:relative;
+                            opacity:1;
+                            visibility:visible;
+                            transition:all .2s ease-in-out;
+                            z-index:1;
+                        }
+                        a{
+                            position:relative;
+                            opacity:1;
+                            visibility:visible;
+                            transition:all .2s ease-in-out;
+                            z-index:1;
+                        }
+                        &:before{
+                            @include position(absolute, $t:0, $l:0);
+                            width:100%;
+                            height:100%;
+                            background-color:rgba(0, 44, 73, 0.7);
+                            z-index:0;
+                            content:""
+                        }
+                    }
+                }
+            }
+        }
+        &-news{
+            article{
+                &:hover{
+                    a{
+                        background-color:#f2f8f5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* RESPONSIVE ================================================================================================== */
+/*
+* wide: 1600px,// wide screen
+* desk: 1400px,// desktop
+* xl: 1280px,// notebook
+* lg: 1024px,// laptop
+* md: 720px,// Medium screen / tablet
+* sm: 480px,// large phone
+* xs: 360px,// medium phone
+* xxs: 320px,// Small phone
+* up:min-width / down:max-width / only:(min-width,max-width)
+*/
+
+// 최대값
+@include media-breakpoint-down(wide){}
+@include media-breakpoint-down(desk){}
+@include media-breakpoint-down(xl){}
+@include media-breakpoint-down(lg){
+    .location{
+        &-inner{
+            @include d-flex;
+            flex-wrap:wrap;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            > a{
+                border-left:none;
+                // flex:0 0 60px;
+            }
+        }
+        &-depth{
+            width:calc(50% - 30px);
+            box-sizing:border-box;
+            min-width:auto;
+            // flex:0 0 calc(50% - 30px);
+            button{
+                font-size:15px
+            }
+            &__child{
+                a{
+                    font-size:2.3rem;
+                }
+            }
+        }
+    }
+    .service{
+        &-info{
+            h4{
+                font-size:3rem;
+            }
+            p{
+                font-size:3rem;
+                line-height: 1.8em;
+            }
+            ul{
+                li{
+                    font-size:2.5rem;
+                }
+            }
+        }
+    }
+    .menu-tit{
+        padding:0 2rem;
+        font-size:4.2rem;
+        + h4{
+            &.txt{
+                padding:0 2rem;
+            }
+        }
+    }
+    .health{
+        &-view{
+            &__cont{
+                padding:5rem 2rem;
+                h4{
+                    font-size:3.5rem;
+                }
+                h6{
+                    font-size:3rem;
+                }
+                p{
+                    font-size:2.7rem;
+                }
+            } 
+            &__writer{
+                padding:5rem 2rem;
+                p{
+                    font-size:15px;
+                    span{
+                        font-size:16px;
+                    }
+                    em{
+                        font-size:14px;
+                    }
+                }
+            }
+            h2{
+                font-size:22px;
+            }
+            &__date{
+                font-size:16px;
+            }
+        }
+        &-checkList{
+            .health{
+                &-item{
+                    height:53rem;
+                    &:before{
+                        @include position(absolute, $t:0, $l:0);
+                        width:100%;
+                        height:100%;
+                        background-color:rgba(0, 0, 0, 0.2);
+                        z-index:0;
+                        content:""
+                    }
+                    h2{
+                        position:relative;
+                        font-size:3rem;
+                        color:#fff;
+                        z-index:1;
+                        text-shadow:1px 1px 16px #000;
+                    }
+                    p{
+                        position:relative;
+                        opacity: 1;
+                        visibility:visible;
+                        font-size:2rem;
+                        z-index:1;
+                    }
+                    a{
+                        position:relative;
+                        opacity: 1;
+                        visibility:visible;
+                        font-size:2rem;
+                        z-index:1;
+                    }
+                }
+            }
+        }
+        &-news{
+            article{
+                a{
+                    padding: 3rem 2rem;
+                    p{
+                        font-size:3rem;
+                        span{
+                            font-size:2.5rem;
+                        }
+                        em{
+                            font-size:2.2rem;
+                        }
+                    }
+                    .img-wrap{
+                        width:3rem;
+                        img{
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .question{
+        &-wrap{
+            padding:7rem 2rem;
+        }
+        &-item{
+            >p{
+                font-size:2.5rem;
+            }
+        }
+    }
+    // .form{
+    //     &-row{
+    //         flex-wrap:wrap;
+    //     }
+    // }
+    .modal{
+        &-title{
+            font-size:4rem;
+        }
+        &-header{
+            padding-bottom:5rem;
+        }
+        &-body{
+            .py_5{
+                padding-top:5rem;
+                padding-bottom:5rem;
+            }
+            h6{
+                font-size:3rem;
+            }
+            .txt{
+                font-size:2.5rem;
+            }
+        }
+        &-content{
+            padding:5rem 3rem 5rem 3rem;
+        }
+    }
+    .sch{
+        &-area{
+            padding:0 2rem;
+            select{
+                font-size:14px;
+            }
+            .form{
+                &-row{
+                    width:calc(100% - 6.5rem);
+                    &__input{
+                        &::placeholder{
+                            font-size:14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md){
+    .service{
+        &-guide{
+            article{
+                flex-wrap:wrap;
+                > *{
+                    width:100%;
+                }
+            }
+            &__img{
+                padding: 5rem 3rem;
+            }
+        }
+        &-info{
+            padding: 0 3rem 5rem;
+            &__tag{
+                width:100px;
+                height:35px;
+                font-size:14px;
+            }
+        }
+    }
+    .health{
+        &-info{
+            article{
+                padding:3rem;
+                a{
+                    flex-wrap:wrap;
+                    > span{
+                        display:block;
+                        width:100%;
+                        text-align:center;
+                    }
+                }
+            }
+            &__cont{
+                width:100%;
+                margin-top:20px;
+                margin-left:0;
+            }
+        }
+        &-checkList{
+            flex-wrap:wrap;
+            padding:0 2rem;
+            .health{
+                &-item{
+                    width:55%;
+                    height:auto;
+                    margin:0 auto;
+                    + div{
+                        margin-top:2rem;
+                    }
+                    h2{
+                        font-size:4rem;
+                    }
+                    p{
+                        font-size:3rem;
+                    }
+                    a{
+                        font-size:3rem;
+                    }
+                }
+            }
+        }
+    }
+    .btn-wrap{
+        .btn{
+            height:50px;
+            font-size:16px;
+            &--list{
+                width:120px;
+            }
+        }
+    }
+    .tab{
+        &-wrap{
+            margin-top:0;
+        }
+        &-link{
+            a{
+                height:8rem;
+                font-size:2.5rem;
+                &.on{
+                    font-size:2.9rem;
+                }
+            }
+        }
+    }
+    .txt{
+        &-reference{
+            font-size:2.5rem;
+        }
+    }
+    .question{
+        &-item{
+            .form{
+                &-row{
+                    input[type="radio"]{
+                        + label{
+                            font-size:2.5rem;
+                            &::before{
+                                width:3rem;
+                                height:3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .form{
+        &-row{
+            &__div{
+                &:nth-child(-n+2){
+                    margin-top:0;
+                }
+                margin-top:3rem;
+                min-width:50%;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm){
+    .health{
+        &-checkList{
+            .health{
+                &-item{
+                    width:100%;
+                    height:auto;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(xs){
+    .form{
+        &-row{
+            flex-wrap:wrap;
+            &__div{
+                margin-left:0;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(xxs){}
+
+// 최소값
+@include media-breakpoint-up(xs){}

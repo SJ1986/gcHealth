@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="Viewport" />
+    <link rel="stylesheet" href="../resource/css/common.css">
+    <script type="text/javascript" src="../resource/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../resource/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/common.js"></script>
+    <title>미래에셋생명 헬스케어 &lt 서비스안내</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-inner">
+                <div class="header-top">
+                    <h1>
+                        <a href="" class="d-flex align-center">
+                            <span class="img-wrap"><img src="../resource/image/common/img-logo.png" alt=""></span>
+                            <span>서울시 직원 헬스케어 서비스</span>
+                        </a>
+                    </h1>
+                </div>
+                <div class="gnb">
+                    <ul>
+                        <li><button type="button">HOME</button></li>
+                    </ul>
+                    <ul>
+                        <li><button type="button">서비스 안내</button></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button type="button">건강정보</button>
+                            <ul class="gnb-depth">
+                                <li><a href="">최신 건강정보</a></li>
+                                <li><a href="">의학뉴스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button type="button">건강체크</button>
+                            <ul class="gnb-depth">
+                                <li><a href="">암 위험도 체크</a></li>
+                                <li><a href="">성인질환 위험도 체크</a></li>
+                                <li><a href="">치매 예방 자가 체크</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a id="cd-menu-trigger" href="#0" class=""><span class="cd-menu-icon"></span></a>
+                <div id="cd-lateral-nav">
+                    <div class="cd-lateral-top"></div>
+                    <ul class="cd-navigation">
+                       <li>
+                           <a href="/">HOME</a>
+                       </li>
+                          <li class="item-has-children">
+                           <a href="">서비스 안내/신청</a>
+                           <ul class="sub-menu lists lists--dot">
+                               <li><a href="">서비스 안내</a></li>
+                               <li><a href="">서비스 신청</a></li>
+                           </ul>
+                       </li>
+               
+                           <li class="item-has-children">
+                               <a href="">건강정보</a>
+                               <ul class="sub-menu lists lists--dot">
+                                   <li><a href="">최신 건강정보</a></li>
+                                   <li><a href="">의학뉴스</a></li>
+                               </ul>
+                           </li>
+               
+                           <li class="item-has-children">
+                               <a href="">건강체크</a>
+                               <ul class="sub-menu lists lists--dot">
+                                   <li><a href="">암 위험도 체크</a></li>
+                                   <li><a href="">성인질환 위험도 체크</a></li>
+                               </ul>
+                           </li>
+
+                   </ul><!-- end: cd-navigation -->               
+               
+               </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <section class="container">
+            <section class="location">
+                <div class="location-inner d-flex">
+                    <a href="location-home" title="홈으로 이동">
+                        <img src="../resource/image/sub/icon/icon-home.png" alt="">
+                    </a>
+                    <div class="location-depth">
+                        <button type="button">
+                            건강체크
+                        </button>
+                        <div class="location-depth__child">
+                            <a href="" title="" target="_self">서비스 안내</a>
+                            <a href="" title="" target="_self">건강정보</a>
+                            <a href="" title="" target="_self">건강체크</a>
+                        </div>
+                    </div>
+                    <div class="location-depth current">
+                        <button type="button">
+                            건강체크
+                        </button>
+                        <div class="location-depth__child">
+                            <a href="" title="페이지 이동">건강정보</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container-inner">
+                <section class="content">
+                    <p class="sub-tit">암 위험도 체크</p>
+                    <div class="inner">
+                        <div class="tab-wrap" id="subTab_healthCheck">
+                            <div class="tab-link">
+                                <a href="" title="페이지이동">폐암</a>
+                                <a href="" title="페이지이동">대장암</a>
+                                <a href="" class="on" title="페이지이동">자궁경부암</a>
+                                <a href="" title="페이지이동">유방암</a>
+                                <a href="" title="페이지이동">난소암</a>
+                            </div>
+                            <p class="txt-reference">
+                                간단한 문항으로 건강상태를 체크해보시기 바랍니다.<br/>
+                                건강체크는 의사의 진료를 대신할 수 없습니다. 참고용으로만 활용하시기 바랍니다.                                
+                            </p>
+                            <div class="tab-cont">
+                                <section class="question-wrap">
+                                    <article class="question-item">
+                                        <p>1. 현재 만 나이가 어떻게 되십니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer01" id="cervicalCancer-0101">
+                                                <label for="cervicalCancer-0101" >
+                                                    39 세 이하
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer01" id="cervicalCancer-0102">
+                                                <label for="cervicalCancer-0102" >
+                                                    40-49 세
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer01" id="cervicalCancer-0103">
+                                                <label for="cervicalCancer-0103" >
+                                                    50 세 이상
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>2. 현재 성생활을 하고 계십니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer02" id="cervicalCancer-0201">
+                                                <label for="cervicalCancer-0201">
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer02" id="cervicalCancer-0202">
+                                                <label for="cervicalCancer-0202">
+                                                    아니오
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>3. 현재 성생활을 하고 있다면, 성상대자는 1명입니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer03" id="cervicalCancer-0301">
+                                                <label for="cervicalCancer-0301">
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer03" id="cervicalCancer-0302">
+                                                <label for="cervicalCancer-0302">
+                                                    아니오
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>4. 이전에 성병으로 치료 받으신 적이 있습니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer04" id="cervicalCancer-0401">
+                                                <label for="cervicalCancer-0401">
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer04" id="cervicalCancer-0402">
+                                                <label for="cervicalCancer-0402">
+                                                    아니오
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>5. 성병으로 치료받은 적이 있다면 인간유두종 바이러스(Human Papilloma Virus) 때문입니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer05" id="cervicalCancer-0501">
+                                                <label for="cervicalCancer-0501">
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer05" id="cervicalCancer-0502">
+                                                <label for="cervicalCancer-0502">
+                                                    아니오
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer05" id="cervicalCancer-0503">
+                                                <label for="cervicalCancer-0503">
+                                                    모른다
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>6. 자궁암 검사 결과 비정상이라는 말을 들은 적이 있었습니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer06" id="cervicalCancer-0601">
+                                                <label for="cervicalCancer-0601">
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer06" id="cervicalCancer-0602">
+                                                <label for="cervicalCancer-0602">
+                                                    아니오
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>7. 첫 생리를 언제 시작하였습니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer07" id="cervicalCancer-0701">
+                                                <label for="cervicalCancer-0701">
+                                                    12 세 미만
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer07" id="cervicalCancer-0702">
+                                                <label for="cervicalCancer-0702">
+                                                    12-14 세
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer07" id="cervicalCancer-0703">
+                                                <label for="cervicalCancer-0702">
+                                                    15 세 이상
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>8. 담배를 피우십니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer08" id="cervicalCancer-0801">
+                                                <label for="cervicalCancer-0801">
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer08" id="cervicalCancer-0802">
+                                                <label for="cervicalCancer-0802">
+                                                    아니오
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>9. 모친께서 회원님을 잉태하셨을 때 DES(Diethylstilboestrol: 에스트로겐 제제 중 하나) 를 복용하셨습니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer09" id="cervicalCancer-0901">
+                                                <label for="cervicalCancer-0901">
+                                                    예
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer09" id="cervicalCancer-0902">
+                                                <label for="cervicalCancer-0902">
+                                                    아니오
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="question-item">
+                                        <p>10. 현재 피임을 하고 있다면, 주로 어떤 방법으로 피임을 하십니까?</p>
+                                        <div class="form-row mt_20">
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer09" id="cervicalCancer-0901">
+                                                <label for="cervicalCancer-0901">
+                                                    경구용 피임약
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer09" id="cervicalCancer-0902">
+                                                <label for="cervicalCancer-0902">
+                                                    콘돔
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer09" id="cervicalCancer-0903">
+                                                <label for="cervicalCancer-0903">
+                                                    여성용 콘돔(다이아프램)
+                                                </label>
+                                            </div>
+                                            <div class="form-row__div">
+                                                <input type="radio" name="cervicalCancer09" id="cervicalCancer-0904">
+                                                <label for="cervicalCancer-0904">
+                                                    기타(피임을 하지 않음)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </section>
+                                <div class="btn-wrap mt_40">
+                                    <button type="button" class="btn btn--view"  data-bs-toggle="modal" data-bs-target="#modal_checkCervical">
+                                        결과보기
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <footer>
+            <div class="footer-inner d-flex">
+                <span class="img-wrap">
+                    <img src="../resource/image/main/img-logo--footer.png" alt="">
+                </span>
+                <div class="footer-info">
+                    <ul class="footer-info__link d-flex">
+                        <li>
+                            <a href="">서울시</a>
+                        </li>
+                        <li>
+                            <a href="">GC케어</a>
+                        </li>
+                    </ul>
+                    <address>
+                        Copyright © 2022 GC Biopharma corporate./<br/>© GC Care. All Rights Reserved.
+                    </address>
+                    <p class="copyright">
+                        <img src="../resource/image/common/icon-caution--green.png" alt="">
+                        본 서비스는 ㈜GC케어에서 제공합니다.
+                    </p>
+                </div>
+                <div class="footer-banner">
+                    <a href="">
+                        <img src="../resource/image/common/img-footer-banner--01.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../resource/image/common/img-footer-banner--02.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+
+        <!-- Modal -->
+        <div class="modal fade health" id="modal_checkCervical" tabindex="-1" aria-labelledby="modal_checkCervicalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-center">
+                    <p class="modal-title" id="modal_checkCervicalLabel">자궁경부암 위험도</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="py_5">
+                        <h6>
+                            text
+                        </h6>
+                        <p class="txt mt_30">
+                            text
+                        </p>
+                        <p class="txt mt_30">
+                            text
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

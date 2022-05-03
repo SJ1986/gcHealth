@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="shortcut icon" href="./resource/image/common/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resource/image/common/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./resource/css/animate.css">
+    <link rel="stylesheet" href="./resource/css/jquery.fullpage.css">
+    <link rel="stylesheet" href="./resource/css/animate.css">
+    <link rel="stylesheet" href="./resource/css/swiper.min.css">
+    <link rel="stylesheet" href="./resource/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resource/css/reset.css">
+    <link rel="stylesheet" href="./resource/css/font.css">
+    <link rel="stylesheet" href="./resource/css/common.css">
+    <link rel="stylesheet" href="./resource/css/main.css">
+    <link rel="stylesheet" href="./resource/css/sub.css">
+    <script src="./resource/js/jquery-1.12.4.min.js"></script>
+    <script src="./resource/js/jquery.fullpage.min.js"></script>
+    <script src="./resource/js/bootstrap.min.js"></script>
+    <script src="./resource/js/swiper.min.js"></script>
+    <script src="./resource/js/common.js"></script>
+    <script src="./resource/js/main.js"></script>
+    <script src="./resource/js/sub.js"></script>
+    <title>GC헬스케어</title>
+
+    <style>
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        .inner {
+            position: relative;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        ul li {
+            font-size: 22px;
+        }
+
+        .tab_link {
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+
+        .tab_link li.on,
+        .tab_link_se a.on {
+            background: #5c7013;
+            color: #fff;
+            border: 1px solid #5c7013;
+        }
+
+        .tab_link li,
+        .tab_link_se a {
+            float: left;
+            width: 20%;
+            box-sizing: border-box;
+            border: 1px solid #e1e2eb;
+            text-align: center;
+            cursor: pointer;
+            line-height: 50px;
+        }
+
+        .tab_link li+li {
+            margin-left: -1px;
+        }
+
+        .tab_cont.on,
+        .tab_cont_se.on,
+        .tab_cont_th.on {
+            display: block;
+        }
+
+        .tab_cont,
+        .tab_cont_se,
+        .tab_cont_th {
+            display: none;
+        }
+
+        h3 {
+            padding: 20px 0 20px 0;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        h4 {
+            padding: 20px 0 20px 0;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
+        table,
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #dedede;
+            border-collapse: collapse;
+            font-weight: bold;
+        }
+
+        tr {
+            border-top: 1px solid #111;
+        }
+
+        th {
+            font-size: 14px !important;
+            text-align: center
+        }
+
+        td {
+            text-align: center;
+            vertical-align: middle;
+            padding: 15px 0 !important;
+            line-height: 1.5rem;
+            font-size: 14px !important;
+            line-height: normal;
+        }
+
+        td a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 200;
+            font-size: 14px !important;
+        }
+
+        td span {
+            font-size: 13px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h3>GC헬스케어</h3>
+
+    <div class="content" style="padding-top:0;">
+        <div class="inner" style="padding-top:0;">
+            <div id="item1" class="tab_cont on">
+                <table>
+                    <colgroup>
+                        <col style="width:5%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:auto">
+                        <col style="width:10%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">1depth</th>
+                            <th scope="col">2depth</th>
+                            <th scope="col"></th>
+                            <th scope="col">url</th>
+                            <th scope="col">비고</th>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>main</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./main/index.html" target="_blank">./main/index.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>서비스안내</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/service.html" target="_blank">./sub/service.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">3</td>
+                            <td rowspan="2">건강정보</td>
+                            <td rowspan="2">최신건강정보</td>
+                            <td>list</td>
+                            <td><a href="./sub/healthInfo_list.html" target="_blank">./sub/healthInfo_list.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>view</td>
+                            <td><a href="./sub/healthInfo_view.html" target="_blank">./sub/healthInfo_view.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>의학뉴스</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/healthInfo_medicalList.html" target="_blank">./sub/healthInfo_medicalList.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="6">4</td>
+                            <td rowspan="6">건강체크</td>
+                            <td></td>
+                            <td>intro</td>
+                            <td><a href="./sub/healthCheck.html" target="_blank">./sub/healthCheck.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">암위험도체크</td>
+                            <td>폐암</td>
+                            <td><a href="./sub/healthCheck_lungcancer.html" target="_blank">./sub/healthCheck_lungcancer.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>대장암</td>
+                            <td><a href="./sub/healthCheck_colorectalCancer.html" target="_blank">./sub/healthCheck_colorectalCancer.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>자궁경부암</td>
+                            <td><a href="./sub/healthCheck_cervicalCancer.html" target="_blank">./sub/healthCheck_cervicalCancer.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>유방암</td>
+                            <td><a href="./sub/healthCheck_breastCancer.html" target="_blank">./sub/healthCheck_breastCancer.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>난소암</td>
+                            <td><a href="./sub/healthCheck_ovarianCancer.html" target="_blank">./sub/healthCheck_ovarianCancer.html</a></td>
+                            <td></td>
+                        </tr>
+                        
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

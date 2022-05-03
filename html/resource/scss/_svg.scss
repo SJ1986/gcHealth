@@ -1,0 +1,38 @@
+@function icon($iconName, $color:555555) {
+    $iconList: ( 
+		inputRadio:"%3Csvg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'%3E%3Ctitle%3ERadio Button Off%3C/title%3E%3Cpath d='M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z' fill='none' stroke='%23#{$color}' stroke-miterlimit='10' stroke-width='25'/%3E%3C/svg%3E",
+		inputRadioOn:"%3Csvg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'%3E%3Ctitle%3ERadio Button On%3C/title%3E%3Cpath d='M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z' fill='none' stroke='%23#{$color}' stroke-miterlimit='10' stroke-width='25'/%3E%3Ccircle cx='256' cy='256' r='100' fill='%23#{$color}' /%3E%3C/svg%3E",
+		inputCheckOn:"%3Csvg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'%3E%3Ctitle%3ECheckbox%3C/title%3E%3Cpath fill='none' stroke='%23#{$color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M352 176L217.6 336 160 272'/%3E%3Crect x='64' y='64' width='384' height='384' rx='48' ry='48' fill='none' stroke='none' stroke-linejoin='round' stroke-width='32'/%3E%3C/svg%3E",
+		inputCheckOff:"%3Csvg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'%3E%3Ctitle%3ECheckbox%3C/title%3E%3Cpath fill='none' stroke='%23#{$color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M352 176L217.6 336 160 272'/%3E%3Crect x='64' y='64' width='384' height='384' rx='48' ry='48' fill='none' stroke='%23b6b6b6' stroke-linejoin='round' stroke-width='32'/%3E%3C/svg%3E",
+    );
+  $icon: map-get($iconList, $iconName);
+  @return url("data:image/svg+xml;charset=utf8,#{$icon}");
+}
+
+.icon{
+	display: inline-block;
+	background-repeat:no-repeat;
+	background-size:contain;
+	&-radio{
+		background-image:icon(inputRadio, 'b6b6b6');
+		&On{
+			background-image:icon(inputRadioOn, '28648b');
+		}
+	}
+	&-check{
+		background-image:icon(inputCheck, 'fff');
+		&On{
+			background-image:icon(inputCheckOn, '28648b');
+		}
+	}
+}
+.img{
+	display: inline-block;
+	background-repeat:no-repeat;
+	background-size:contain;
+	&-footerLogo{
+		width:141.3px;
+		height:15.5px;
+		background-image:icon(imgFooterLogo);
+	}
+}
