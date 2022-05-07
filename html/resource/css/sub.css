@@ -361,6 +361,7 @@
 }
 
 .health-info article {
+  width: 100%;
   padding: 30px 0;
 }
 
@@ -372,6 +373,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
 }
 
 .health-info article + article {
@@ -381,6 +383,7 @@
 .health-info__cont {
   padding-left: 0;
   margin-left: 0;
+  width: 100%;
 }
 
 .health-info__cont .publisher {
@@ -391,6 +394,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
   margin-top: 20px;
 }
 
