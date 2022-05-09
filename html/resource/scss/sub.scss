@@ -310,22 +310,34 @@
             border-bottom:1px solid #e5e5e5;
             .img-wrap{
                 padding-left:0;
-                li{
-                    +li{
-                        margin-left:2rem;
-                    }
-                }
+                text-align:center;
                 img{
-                    width:100%;
+                    display:inline-block;
                 }
+                // li{
+                //     +li{
+                //         margin-left:2rem;
+                //     }
+                // }
+                // img{
+                //     width:100%;
+                // }
             }
-            h4{
+            h2{
                 margin-top:5rem;
                 font-weight:600;
+                color:#0063c0;
                 + p{
                     margin-top:3rem
                 }
             }
+            // h4{
+            //     margin-top:5rem;
+            //     font-weight:600;
+            //     + p{
+            //         margin-top:3rem
+            //     }
+            // }
             h6{
                 margin-top:5rem;
             }
@@ -345,7 +357,7 @@
             p{
                 margin-left:30px;
                 font-size:18px;
-                span{
+                span, b{
                     display: block;
                     
                     font-size:20px;
@@ -770,7 +782,7 @@
         &-view{
             &__cont{
                 padding:5rem 2rem;
-                h4{
+                h2{
                     font-size:3.5rem;
                 }
                 h6{
@@ -784,7 +796,7 @@
                 padding:5rem 2rem;
                 p{
                     font-size:15px;
-                    span{
+                    span, b{
                         font-size:16px;
                     }
                     em{
@@ -888,8 +900,11 @@
             h6{
                 font-size:3rem;
             }
-            .txt{
+            .txt, p{
                 font-size:2.5rem;
+                + p{
+                    margin-top:30px;
+                }
             }
         }
         &-content{

@@ -470,22 +470,20 @@
 
 .health-view__cont .img-wrap {
   padding-left: 0;
-}
-
-.health-view__cont .img-wrap li + li {
-  margin-left: 2rem;
+  text-align: center;
 }
 
 .health-view__cont .img-wrap img {
-  width: 100%;
+  display: inline-block;
 }
 
-.health-view__cont h4 {
+.health-view__cont h2 {
   margin-top: 5rem;
   font-weight: 600;
+  color: #0063c0;
 }
 
-.health-view__cont h4 + p {
+.health-view__cont h2 + p {
   margin-top: 3rem;
 }
 
@@ -519,7 +517,7 @@
   font-size: 18px;
 }
 
-.health-view__writer p span {
+.health-view__writer p span, .health-view__writer p b {
   display: block;
   font-size: 20px;
   font-weight: 600;
@@ -952,7 +950,7 @@
   .health-view__cont {
     padding: 5rem 2rem;
   }
-  .health-view__cont h4 {
+  .health-view__cont h2 {
     font-size: 3.5rem;
   }
   .health-view__cont h6 {
@@ -967,7 +965,7 @@
   .health-view__writer p {
     font-size: 15px;
   }
-  .health-view__writer p span {
+  .health-view__writer p span, .health-view__writer p b {
     font-size: 16px;
   }
   .health-view__writer p em {
@@ -1050,8 +1048,11 @@
   .modal-body h6 {
     font-size: 3rem;
   }
-  .modal-body .txt {
+  .modal-body .txt, .modal-body p {
     font-size: 2.5rem;
+  }
+  .modal-body .txt + p, .modal-body p + p {
+    margin-top: 30px;
   }
   .modal-content {
     padding: 5rem 3rem 5rem 3rem;
