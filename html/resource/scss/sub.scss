@@ -296,7 +296,7 @@
             font-size:3rem;
             font-weight:bold;
             padding-top:5rem;
-            text-align:center;
+            text-align:left;
         }
         &__date{
             margin-top:3.5rem;
@@ -313,6 +313,7 @@
                 text-align:center;
                 img{
                     display:inline-block;
+                    max-width:100%;
                 }
                 // li{
                 //     +li{
@@ -651,6 +652,12 @@
     &-body{
         padding:0;
         border-bottom:1px solid #000;
+        p, .txt{
+            font-size:16px;
+            + p{
+                margin-top:30px;
+            }
+        }
     }
     &-footer{
 

@@ -452,7 +452,7 @@
   font-size: 3rem;
   font-weight: bold;
   padding-top: 5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .health-view__date {
@@ -475,6 +475,7 @@
 
 .health-view__cont .img-wrap img {
   display: inline-block;
+  max-width: 100%;
 }
 
 .health-view__cont h2 {
@@ -845,6 +846,14 @@
 .modal-body {
   padding: 0;
   border-bottom: 1px solid #000;
+}
+
+.modal-body p, .modal-body .txt {
+  font-size: 16px;
+}
+
+.modal-body p + p, .modal-body .txt + p {
+  margin-top: 30px;
 }
 
 /* HOVER ======================================================================================================= */
