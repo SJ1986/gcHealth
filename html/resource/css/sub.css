@@ -452,7 +452,8 @@
   font-size: 3rem;
   font-weight: bold;
   padding-top: 5rem;
-  text-align: left;
+  color: #0063c0;
+  text-align: inherit;
 }
 
 .health-view__date {
@@ -493,6 +494,7 @@
 }
 
 .health-view__cont p {
+  padding: 20px 0;
   font-size: 16px;
   line-height: 1.8em;
   letter-spacing: -0.05em;
@@ -500,6 +502,35 @@
 
 .health-view__cont p + p {
   margin-top: 3rem;
+}
+
+.health-view__cont .disc_board {
+  margin: 2rem 0;
+  border: 5px solid #ededed;
+}
+
+.health-view__cont .disc_board .sub-tit3 {
+  padding: 20PX 0 0 0;
+}
+
+.health-view__cont .info-item2 {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ededed;
+  background: #fff;
+}
+
+.health-view__cont .pic-wrap {
+  margin: 1% 3%;
+  text-align: center;
+}
+
+.health-view__cont .pic-wrap img {
+  max-width: 100%;
+}
+
+.health-view__cont .pic-wrap.f-left {
+  float: left;
 }
 
 .health-view__writer {
@@ -850,10 +881,15 @@
 
 .modal-body p, .modal-body .txt {
   font-size: 16px;
+  margin-top: 30px;
 }
 
-.modal-body p + p, .modal-body .txt + p {
-  margin-top: 30px;
+.modal-body > div {
+  font-size: 2rem;
+}
+
+.modal-body > div strong {
+  font-weight: 500;
 }
 
 /* HOVER ======================================================================================================= */
