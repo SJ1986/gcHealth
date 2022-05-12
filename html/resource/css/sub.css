@@ -845,22 +845,41 @@
   min-width: auto;
 }
 
-.modal#modal_checkLungCancer .modal-dialog {
+.popup, .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1055;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.popup#modal_checkLungCancer .popup-dialog, .popup#modal_checkLungCancer .modal-dialog, .modal#modal_checkLungCancer .popup-dialog, .modal#modal_checkLungCancer .modal-dialog {
   max-width: 108rem;
+  margin: 1.75rem auto;
 }
 
-.modal-content {
+.popup-content, .modal-content {
+  position: relative;
   padding: 5rem 5rem 8rem 5rem;
+  background-color: #fff;
 }
 
-.modal-header {
+.popup-header, .modal-header {
   padding: 0;
   padding-bottom: 50px;
   border-bottom: 1px solid #000;
   text-align: center;
 }
 
-.modal-header .btn-close {
+.popup-header .btn-close, .modal-header .btn-close {
+  position: absolute;
+  top: 4rem;
+  right: 5rem;
   width: 2.5rem;
   height: 2.5rem;
   margin-bottom: 6rem;
@@ -869,28 +888,52 @@
   opacity: 1;
 }
 
-.modal-title {
+.popup-title, .modal-title {
   margin-left: auto;
   font-size: 40px;
   font-weight: 700;
 }
 
-.modal-body {
+.popup-body, .modal-body {
   padding: 0;
   border-bottom: 1px solid #000;
 }
 
-.modal-body p, .modal-body .txt {
+.popup-body p, .popup-body .txt, .modal-body p, .modal-body .txt {
   font-size: 16px;
   margin-top: 30px;
 }
 
-.modal-body > div {
+.popup-body > div, .modal-body > div {
   font-size: 2rem;
 }
 
-.modal-body > div strong {
+.popup-body > div strong, .modal-body > div strong {
   font-weight: 500;
+}
+
+.popup-open .popup, .modal-open .popup {
+  display: block;
+}
+
+.popup-open .popup.fade, .modal-open .popup.fade {
+  opacity: 1;
+}
+
+.popup-open .popup-backdrop, .modal-open .popup-backdrop {
+  display: block;
+  opacity: .5;
+}
+
+.popup-backdrop, .modal-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
 }
 
 /* HOVER ======================================================================================================= */
@@ -1081,26 +1124,26 @@
   .question-item > p {
     font-size: 2.5rem;
   }
-  .modal-title {
+  .popup-title, .modal-title {
     font-size: 4rem;
   }
-  .modal-header {
+  .popup-header, .modal-header {
     padding-bottom: 5rem;
   }
-  .modal-body .py_5 {
+  .popup-body .py_5, .modal-body .py_5 {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  .modal-body h6 {
+  .popup-body h6, .modal-body h6 {
     font-size: 3rem;
   }
-  .modal-body .txt, .modal-body p {
+  .popup-body .txt, .popup-body p, .modal-body .txt, .modal-body p {
     font-size: 2.5rem;
   }
-  .modal-body .txt + p, .modal-body p + p {
+  .popup-body .txt + p, .popup-body p + p, .modal-body .txt + p, .modal-body p + p {
     margin-top: 30px;
   }
-  .modal-content {
+  .popup-content, .modal-content {
     padding: 5rem 3rem 5rem 3rem;
   }
   .sch-area {

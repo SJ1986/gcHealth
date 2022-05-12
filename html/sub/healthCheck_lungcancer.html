@@ -354,7 +354,7 @@
                                     </article>
                                 </section>
                                 <div class="btn-wrap mt_40">
-                                    <button type="button" class="btn btn--view"  data-bs-toggle="modal" data-bs-target="#modal_checkLungCancer">
+                                    <button type="button" class="btn btn--view"  data-toggle="modal" data-target="#modal_checkLungCancer">
                                         결과보기
                                     </button>
                                 </div>
@@ -399,15 +399,15 @@
         </footer>
         <!-- footer -->
 
-        <!-- Modal -->
-        <div class="modal fade health" id="modal_checkLungCancer" tabindex="-1" aria-labelledby="modal_checkLungCancerLabel" aria-hidden="true">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header justify-center">
-                    <p class="modal-title" id="modal_checkLungCancerLabel">폐암 위험도</p>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- popup -->
+        <div class="popup fade health" id="modal_checkLungCancer" tabindex="-1" aria-labelledby="modal_checkLungCancerLabel" aria-hidden="true">
+            <div class="popup-dialog">
+            <div class="popup-content">
+                <div class="popup-header justify-center">
+                    <p class="popup-title" id="modal_checkLungCancerLabel">폐암 위험도</p>
+                    <button type="button" class="btn-close close" data-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="popup-body">
                     <div class="py_5">
                         <h6>
                             흡연을 하지 않는 당신은 폐암 발생 위험도가 매우 적은 편이라 할 수 있습니다.
@@ -427,5 +427,8 @@
         </div>
 
     </div>
+
+    <div class="popup-backdrop fade"></div>
+    
 </body>
 </html>

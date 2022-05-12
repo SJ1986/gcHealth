@@ -6,6 +6,7 @@ $(function(){
     locationNav();
 	subTab_healthCheck();
 	imgSwitch();
+	popupFN();
 })
 
 function gnb(){
@@ -123,4 +124,22 @@ function imgSwitch(){
             $(this).removeClass('on');
         });    
     });
+}
+
+function popupFN(){
+	$('.btn--view').click(function(){
+		var popupTarget = $(this).data('bs-target');
+		var popupClose = $('.popup').find('button.close');
+	
+		$('body').addClass('popup-open');
+		$('#' + popupTarget).addClass('show');
+			popupClose.click(function(){
+				$('body').removeClass('popup-open');
+				$('#' + popupTarget).removeClass('show');
+			});
+		$('.popup .close').click(function(){
+			$(this).parents('.popup').removeClass('show');
+			$('body').removeClass('popup-open');
+		});
+	})
 }
