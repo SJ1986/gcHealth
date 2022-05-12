@@ -24,6 +24,14 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'%3E%3Ctitle%3ERadio Button On%3C/title%3E%3Cpath d='M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z' fill='none' stroke='%2328648b' stroke-miterlimit='10' stroke-width='25'/%3E%3Ccircle cx='256' cy='256' r='100' fill='%2328648b' /%3E%3C/svg%3E");
 }
 
+.icon-check {
+  background-image: url("data:image/svg+xml;charset=utf8,");
+}
+
+.icon-checkOn {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'%3E%3Ctitle%3ECheckbox%3C/title%3E%3Cpath fill='none' stroke='%2328648b' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M352 176L217.6 336 160 272'/%3E%3Crect x='64' y='64' width='384' height='384' rx='48' ry='48' fill='none' stroke='none' stroke-linejoin='round' stroke-width='32'/%3E%3C/svg%3E");
+}
+
 .img {
   display: inline-block;
   background-repeat: no-repeat;
@@ -44,6 +52,7 @@ html, body {
 /* HEADER ====================================================================================================== */
 header {
   position: relative;
+  padding-top: 5px;
 }
 
 header:before {
@@ -206,6 +215,10 @@ header .header-top h1 span.img-wrap {
   left: 40px;
   width: 2px;
   height: 2px;
+}
+
+#cd-lateral-nav .cd-navigation li + li {
+  margin-top: 0;
 }
 
 #cd-lateral-nav .sub-menu {
@@ -404,6 +417,16 @@ footer .footer-banner a + a {
   }
   header .header-top h1 {
     margin-right: auto;
+    margin-top: 3px;
+  }
+  header .header-top h1 .img-wrap img {
+    width: 14rem;
+  }
+  header .header-top h1 span {
+    font-size: 3rem;
+  }
+  header .header-top h1 span.img-wrap {
+    margin-right: 5px;
   }
   #cd-menu-trigger {
     display: block;
@@ -499,12 +522,6 @@ footer .footer-banner a + a {
 }
 
 @media (max-width: 480px) {
-  header .header-top h1 .img-wrap img {
-    width: 14rem;
-  }
-  header .header-top h1 span {
-    font-size: 3rem;
-  }
   footer .footer-banner {
     text-align: center;
   }

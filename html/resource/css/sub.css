@@ -324,6 +324,7 @@
   width: 100%;
   height: 100%;
   border: none;
+  font-size: 1.6rem;
 }
 
 .sch-area .form-row__input::-webkit-input-placeholder {
@@ -1110,6 +1111,9 @@
   }
   .sch-area .form-row {
     width: calc(100% - 6.5rem);
+  }
+  .sch-area .form-row__input {
+    font-size: 14px;
   }
   .sch-area .form-row__input::-webkit-input-placeholder {
     font-size: 14px;
