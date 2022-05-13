@@ -211,10 +211,12 @@ header .header-top h1 span.img-wrap {
 }
 
 #cd-lateral-nav .cd-navigation li:before {
-  top: 32px;
+  top: 50%;
   left: 40px;
   width: 2px;
   height: 2px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #cd-lateral-nav .cd-navigation li + li {
@@ -421,6 +423,7 @@ footer .footer-banner a + a {
   }
   header .header-top h1 .img-wrap img {
     width: 73px;
+    margin-bottom: 2px;
   }
   header .header-top h1 span {
     font-size: 3rem;

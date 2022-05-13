@@ -149,10 +149,11 @@ header{
         li{
             border-bottom:1px solid #e3e7ea;
             &:before{
-                top:32px;
+                top:50%;
                 left:40px;
                 width:2px;
                 height:2px;
+                transform:translateY(-50%)
             }
             + li{
                 margin-top:0;
@@ -398,6 +399,7 @@ footer{
                     .img-wrap{
                         img{
                             width:73px;
+                            margin-bottom:2px;
                         }
                     }
                     span{
