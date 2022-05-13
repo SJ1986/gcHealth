@@ -1006,12 +1006,18 @@
   }
   .location-inner > a {
     border-left: none;
+    display: none;
   }
   .location-depth {
-    width: calc(50% - 30px);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     min-width: auto;
+  }
+  .location-depth:nth-child(2) {
+    width: 35%;
+  }
+  .location-depth:last-child {
+    width: 65%;
   }
   .location-depth button {
     font-size: 15px;

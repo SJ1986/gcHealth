@@ -807,13 +807,20 @@
             > a{
                 border-left:none;
                 // flex:0 0 60px;
+                display:none;
             }
         }
         &-depth{
-            width:calc(50% - 30px);
-            box-sizing:border-box;
-            min-width:auto;
             // flex:0 0 calc(50% - 30px);
+            //width:calc(50% - 30px);
+            box-sizing:border-box;
+            min-width:auto;            
+            &:nth-child(2){
+                width:35%;
+            }
+            &:last-child{
+                width:65%
+            }
             button{
                 font-size:15px
             }
