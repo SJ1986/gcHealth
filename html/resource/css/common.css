@@ -189,7 +189,7 @@ header .header-top h1 span.img-wrap {
   display: block;
   font-size: 16px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 100%;
   padding: 20px 25px;
   color: #000;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
