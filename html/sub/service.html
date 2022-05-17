@@ -209,9 +209,9 @@
                                         홈페이지를 통해 자가체크 프로그램 제공
                                     </p>
                                     <div class="btn-wrap mt_30" style="justify-content:flex-start">
-                                        <button type="button" class="btn" style="width:210px;border:1px solid #002c49;color:#212529;font-weight:500;" onclick="location.href='../sub/healthCheck.html'">
+                                        <a href="" class="btn" style="width:210px;padding:0;border:1px solid #002c49;color:#212529;font-size:18px;font-weight:500;line-height:50px" onclick="location.href='../sub/healthCheck.html'">
                                             건강체크 바로가기
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </article>
@@ -242,9 +242,9 @@
                                         <li>녹십자 임직원몰 http://www.gclifecare.com 가입 후 이용 가능</li>
                                     </ul>
                                     <div class="btn-wrap mt_30" style="justify-content:flex-start">
-                                        <button type="button" class="btn btn--view" style="width:210px;">
+                                        <a href="" class="btn"  style="width:210px;padding:0;border:1px solid #002c49;color:#212529;font-size:18px;font-weight:500;line-height:50px" target="_blank">
                                             임직원몰 바로가기
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </article>
@@ -271,9 +271,7 @@
                                         <li>홈페이지의 모든 프로그램 20%우대</li>
                                     </ul>
                                     <div class="btn-wrap mt_30" style="justify-content:flex-start">
-                                        <button type="button" class="btn btn--view" style="width:300px;" onclick="window.open('http://mcc.megastudy.net/index.asp')">
-                                            메가스터디대입컨설팅센터 바로가기
-                                        </button>
+                                        <a href="" class="btn"  style="width:300px;padding:0;border:1px solid #002c49;color:#212529;font-weight:500;line-height:50px" target="_blank">메가스터디대입컨설팅센터 바로가기</a>
                                     </div>
                                 </div>
                             </article>
@@ -439,7 +437,7 @@
         </footer>
         <!-- footer -->
         <!-- popup -->
-        <div class="popup fade health" id="modal_coHospital__list" tabindex="-1" aria-labelledby="modal_coHospital__listLabel" aria-hidden="true">
+        <div class="popup fade coHospital" id="modal_coHospital__list" tabindex="-1" aria-labelledby="modal_coHospital__listLabel" aria-hidden="true">
             <div class="popup-dialog">
             <div class="popup-content">
                 <div class="popup-header justify-center">
@@ -448,13 +446,305 @@
                 </div>
                 <div class="popup-body">
                     <div class="py_5">
-                        <h6>
-                            title
-                        </h6>
-                        <p class="txt mt_30">
-                            text
-                        </p>
-                        
+                        <div class="table-wrap">
+                            <table>
+                                <caption>진료협력병원 테이블</caption>
+                                <colgroup>
+                                    <col style="width:10%">
+                                    <col style="width:15%">
+                                    <col style="width:auto">
+                                    <col style="width:15%">
+                                    <col style="width:10%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">지역</th>
+                                        <th scope="col">병원명</th>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">협력</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td rowspan="16">서울</td>
+                                        <td>강남세브란스병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>서울대학교병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>삼성서울병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>강동경희대병원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>경희대학교의료원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>고려대구로병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>원자력병원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>신촌세브란스병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>서울아산병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>여의도성모병원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>한양대학교병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>고려대학교 안암병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>가톨릭대학교 은평성모병원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>이화여대 서울병원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>이화여대 목동병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>서울성모병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td rowspan="5">경기도</td>
+                                        <td>순천향대 부천병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>국립암센터	</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>한양대 구리병원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>아주대학교병원	</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>분당서울대학교병원	</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>인천</td>
+                                        <td>길병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>강원도</td>
+                                        <td>원주세브란스기독병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>충남</td>
+                                        <td>단국대학교병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td rowspan="3">대전</td>
+                                        <td>충남대학교병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>건양대학교병원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td>충남세종대병원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td rowspan="3">대구</td>
+                                        <td>영남대학교병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td>계명대 동산의료원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>대구가톨릭대학교병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>31</td>
+                                        <td rowspan="5">부산</td>
+                                        <td>인제대 부산백병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>32</td>
+                                        <td>고신대학교병원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>33</td>
+                                        <td>부산대학교병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>34</td>
+                                        <td>동아대학교병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>35</td>
+                                        <td>동남권원자력 의학원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td rowspan="3">경남</td>
+                                        <td>양산부산대병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>37</td>
+                                        <td>경상대학교병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>38</td>
+                                        <td>창원경상대학교병원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>39</td>
+                                        <td>전북</td>
+                                        <td>원광대학교병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td rowspan="4">광주</td>
+                                        <td>빛고을 전남대학교병원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>41</td>
+                                        <td>광주기독병원</td>
+                                        <td>종합병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>42</td>
+                                        <td>전남대학교병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>43</td>
+                                        <td>조선대학교병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                    <tr>
+                                        <td>44</td>
+                                        <td>전남</td>
+                                        <td>전남대학교 화순병원</td>
+                                        <td>상급병원</td>
+                                        <td>유</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

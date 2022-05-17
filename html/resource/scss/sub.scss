@@ -728,6 +728,50 @@
     }
 }
 
+// 20220517
+.coHospital{
+    .popup{
+        &-content{
+            overflow:hidden;
+            width:calc(100% - 10rem);
+            height:80rem;
+            margin:0 auto;
+        }
+        &-body{
+            overflow:auto;
+            height:100%;
+            .py_5{
+                padding-right:2rem;
+            }
+            .table-wrap{
+                table{
+                    border-collapse: collapse;
+                    th{
+                        padding:10px 0;
+                        font-size:2rem;
+                        font-weight:500;
+                        border-bottom:2px solid rgb(161, 161, 161);
+                        text-align:center;
+                    }
+                    td{
+                        padding:10px 0;
+                        border-left:1px solid #eee;
+                        border-right:1px solid #eee;
+                        border-bottom:1px solid #eee;
+                        font-size:1.7rem;
+                        vertical-align:middle;
+                        text-align:center;
+                        &[rowspan]{
+                            border-left:1px solid #eee;
+                            border-right:1px solid #eee;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* HOVER ======================================================================================================= */
 @include media-breakpoint-up(lg){
     .health{

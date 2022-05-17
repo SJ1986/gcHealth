@@ -936,6 +936,49 @@
   background-color: #000;
 }
 
+.coHospital .popup-content {
+  overflow: hidden;
+  width: calc(100% - 10rem);
+  height: 80rem;
+  margin: 0 auto;
+}
+
+.coHospital .popup-body {
+  overflow: auto;
+  height: 100%;
+}
+
+.coHospital .popup-body .py_5 {
+  padding-right: 2rem;
+}
+
+.coHospital .popup-body .table-wrap table {
+  border-collapse: collapse;
+}
+
+.coHospital .popup-body .table-wrap table th {
+  padding: 10px 0;
+  font-size: 2rem;
+  font-weight: 500;
+  border-bottom: 2px solid #a1a1a1;
+  text-align: center;
+}
+
+.coHospital .popup-body .table-wrap table td {
+  padding: 10px 0;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  font-size: 1.7rem;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.coHospital .popup-body .table-wrap table td[rowspan] {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
 /* HOVER ======================================================================================================= */
 @media (min-width: 1024px) {
   .health-checkList .health-item:hover h2 {
