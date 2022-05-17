@@ -925,6 +925,19 @@
   opacity: .5;
 }
 
+.popup-open .modal, .modal-open .modal {
+  display: block;
+}
+
+.popup-open .modal.fade, .modal-open .modal.fade {
+  opacity: 1;
+}
+
+.popup-open .modal-backdrop, .modal-open .modal-backdrop {
+  display: block;
+  opacity: .5;
+}
+
 .popup-backdrop, .modal-backdrop {
   display: none;
   position: fixed;
@@ -936,28 +949,30 @@
   background-color: #000;
 }
 
-/* 20220517 수정*/
-.coHospital .popup-content {
+.coHospital .popup-content, .coHospital .modal-content {
   overflow: hidden;
-  width: calc(100% - 10rem);
   height: 80rem;
   margin: 0 auto;
 }
 
-.coHospital .popup-body {
+.coHospital .popup-title, .coHospital .modal-title {
+  margin-left: 0;
+}
+
+.coHospital .popup-body, .coHospital .modal-body {
   overflow: auto;
   height: 100%;
 }
 
-.coHospital .popup-body .py_5 {
+.coHospital .popup-body .py_5, .coHospital .modal-body .py_5 {
   padding-right: 2rem;
 }
 
-.coHospital .popup-body .table-wrap table {
+.coHospital .popup-body .table-wrap table, .coHospital .modal-body .table-wrap table {
   border-collapse: collapse;
 }
 
-.coHospital .popup-body .table-wrap table th {
+.coHospital .popup-body .table-wrap table th, .coHospital .modal-body .table-wrap table th {
   padding: 10px 0;
   font-size: 2rem;
   font-weight: 500;
@@ -965,7 +980,7 @@
   text-align: center;
 }
 
-.coHospital .popup-body .table-wrap table td {
+.coHospital .popup-body .table-wrap table td, .coHospital .modal-body .table-wrap table td {
   padding: 10px 0;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
@@ -975,11 +990,16 @@
   text-align: center;
 }
 
-.coHospital .popup-body .table-wrap table td[rowspan] {
+.coHospital .popup-body .table-wrap table td[rowspan], .coHospital .modal-body .table-wrap table td[rowspan] {
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
 }
-/* //20220517 수정*/
+
+.coHospital .popup-dialog, .coHospital .modal-dialog {
+  max-width: 100%;
+  width: calc(100% - 10rem);
+  margin: 0 auto;
+}
 
 /* HOVER ======================================================================================================= */
 @media (min-width: 1024px) {

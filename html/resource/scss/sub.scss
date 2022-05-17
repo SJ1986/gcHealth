@@ -715,6 +715,16 @@
                 opacity:.5;
             }
         }
+        .modal{
+            display:block;
+            &.fade{
+                opacity:1;
+            }
+            &-backdrop{
+                display:block;
+                opacity:.5;
+            }
+        }
     }
     &-backdrop{
         display:none;
@@ -730,12 +740,14 @@
 
 // 20220517
 .coHospital{
-    .popup{
+    .popup, .modal{
         &-content{
             overflow:hidden;
-            width:calc(100% - 10rem);
             height:80rem;
             margin:0 auto;
+        }
+        &-title{
+            margin-left:0;
         }
         &-body{
             overflow:auto;
@@ -768,6 +780,11 @@
                     }
                 }
             }
+        }
+        &-dialog{
+            max-width:100%;
+            width:calc(100% - 10rem);
+            margin:0 auto;
         }
     }
 }

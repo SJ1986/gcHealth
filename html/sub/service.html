@@ -193,7 +193,7 @@
                                         초진에 한해 의료기관 진료예약 대행
                                     </p>
                                     <div class="btn-wrap mt_30" style="justify-content:flex-start">
-                                        <button type="button" class="btn btn--view"  data-toggle="modal" data-target="#modal_coHospital__list" style="width:210px;">
+                                        <button type="button" class="btn btn--view"  data-bs-toggle="modal" data-bs-target="#modal_coHospital__list" style="width:210px;">
                                             진료협력병원 보기
                                         </button>
                                     </div>
@@ -444,14 +444,14 @@
         <!-- footer -->
         <!-- popup -->
         <!-- 20220517 수정 -->
-        <div class="popup fade coHospital" id="modal_coHospital__list" tabindex="-1" aria-labelledby="modal_coHospital__listLabel" aria-hidden="true">
-            <div class="popup-dialog">
-            <div class="popup-content">
-                <div class="popup-header justify-center">
-                    <p class="popup-title" id="modal_coHospital__listLabel">진료협력병원</p>
-                    <button type="button" class="btn-close close" data-dismiss="modal" aria-label="Close"></button>
+        <div class="modal fade coHospital" id="modal_coHospital__list" tabindex="-1" aria-labelledby="modal_coHospital__listLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-center">
+                    <p class="modal-title" id="modal_coHospital__listLabel">진료협력병원</p>
+                    <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="popup-body">
+                <div class="modal-body">
                     <div class="py_5">
                         <div class="table-wrap">
                             <table>
@@ -760,8 +760,6 @@
         <!-- //20220517 수정 -->
 
     </div>
-
-    <div class="popup-backdrop fade"></div>
    
 </body>
 </html>
