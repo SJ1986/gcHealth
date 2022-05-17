@@ -936,6 +936,7 @@
   background-color: #000;
 }
 
+/* 20220517 수정*/
 .coHospital .popup-content {
   overflow: hidden;
   width: calc(100% - 10rem);
@@ -978,6 +979,7 @@
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
 }
+/* //20220517 수정*/
 
 /* HOVER ======================================================================================================= */
 @media (min-width: 1024px) {
