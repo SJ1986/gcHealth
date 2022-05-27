@@ -10,6 +10,7 @@
     <script type="text/javascript" src="../resource/js/jquery-ui.js"></script>
     <script type="text/javascript" src="../resource/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../resource/js/common.js"></script>
+    <script type="text/javascript" src="../resource/js/jquery.rwdImageMaps.min.js"></script>
     <title>GC녹십자 헬스케어</title>
 </head>
 <body>
@@ -229,6 +230,137 @@
             </div>
         </footer>
         <!-- footer -->
+
+        <script type="text/javascript">
+
+            function hideMe(s) {
+                var divObj = document.getElementById(s);
+                divObj.style.display = "none";
+            } 
+            function showMe(s) { 
+                document.s.visibility="show"; 
+            } 
+            //document.onmousedown=ddInit; 
+            document.onmouseup=Function("ddEnabled=false"); 
+            //쿠키 가져오기
+            function divpop_getCookie( name ){
+                var nameOfCookie = name + "=";
+                var x = 0;
+                
+                while ( x <= document.cookie.length )
+                {
+                    var y = (x+nameOfCookie.length);
+                    if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+                    if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+                    endOfCookie = document.cookie.length;		
+                    return unescape( document.cookie.substring( y, endOfCookie ) );
+                }
+                x = document.cookie.indexOf( " ", x ) + 1;
+                if ( x == 0 )
+                    break;
+                }
+                return "";
+            }
+            //쿠키굽기
+            function divpop_setCookie_OLD( name, value, expiredays )
+            {
+                var todayDate = new Date(); 
+                var expiretime = 23-todayDate.getHours();
+                var expireminutes = 60-todayDate.getMinutes(); 
+                todayDate.setHours( todayDate.getHours() + expiretime ); 
+                todayDate.setMinutes(todayDate.getMinutes() + expireminutes);
+                document.cookie = name + "=" + escape( value ) + "; path=/main/; expires=" + todayDate.toGMTString() + ";";
+            }
+            function divpop_setCookie( name, value, expiredays ){
+                var todayDate = new Date();   
+                todayDate = new Date(parseInt(todayDate.getTime() / 86400000) * 86400000 + 54000000);  
+                if ( todayDate > new Date() ){  
+                    expiredays = expiredays - 1;  
+                }  
+                todayDate.setDate( todayDate.getDate() + expiredays );   
+                    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"   
+            }
+            function divpop_closeWin(obj){
+                var todayDate = new Date(); 
+                var expiretime = 23-todayDate.getHours();
+                var expireminutes = 60-todayDate.getMinutes(); 
+                todayDate.setHours( todayDate.getHours() + expiretime ); 
+                todayDate.setMinutes(todayDate.getMinutes() + expireminutes);
+                divpop_setCookie( obj, 'done' , 1);
+                //query_frm.location.href="divpop_status.asp?div_name="+obj+"&exdate="+todayDate.toGMTString();
+                hideMe(obj);
+            }
+            function divpop_status(obj) 
+            {		
+                console.log(divpop_getCookie(obj)+"-"+obj);
+                if(divpop_getCookie(obj) == 'done'){		
+                    console.log("TT");
+                    $("#"+obj).hide();
+                }		
+            }
+        </script>
+
+        <script type="text/javascript" language="Javascript">
+            divpop_status("divpop1");
+            divpop_status("divpop2");
+        </script>
+        
+        
+        <script type="text/javascript">
+            function hideMe(s) {
+                var divObj = document.getElementById(s);
+                divObj.style.display = "none";
+            } 
+            function showMe(s) { 
+                document.s.visibility="show"; 
+            } 
+        </script>
+        
+        <!-- #################################################     팝업관련 소스 시작  ############################################################### --> 
+        <style type="text/css"> 
+            div#divpop1 {display:block;position:absolute; left:0; top:0;z-index:1000;width:500px;height:auto;} 
+            div#divpop1 div.con_box2 {position:relative;width:500px;height:auto;background:#fff;} 
+            div#divpop1 div.con_box2 > a{display:block;position:relative} 
+            div#divpop1 div.con_box2 > a:focus{outline:1px solid red !important;} 
+            div#divpop1 div.con_box2 img{display:block; width:100%} 
+            div#divpop1 div.bo_box {position:relative;width:100%;height:26px;background:#757575;line-height:26px;} 
+            div#divpop1 div.bo_box span {color:#fff; display:inline-block;margin:6px 0 0 10px;width:200px;line-height:15px;letter-spacing:-0.05em;  font-size:12px;} 
+            div#divpop1 div.bo_box a.dayClose{display:inline-block;color:#fff;font-size:12px;cursor:pointer;vertical-align:top;}
+            div#divpop1 div.bo_box a.dayClose span{display:inline-block;width:15px;height:15px;margin-top:0;margin-right:5px;background-color:#fff;border:1px solid #000;vertical-align:middle}
+            div#divpop1 div.bo_box a:focus{outline:1px solid red}
+            div#divpop1 div.bo_box span em {color:#fff;} 
+            div#divpop1 div.bo_box input {vertical-align:middle;float:left;display:inline-block;width:13px;height:13px;margin-top:1px;margin-right:7px;line-height:15px;} 
+            div#divpop1 div.bo_box a.btn_close {display:block;height:auto;padding:0;line-height:15px;position:absolute;top:6px;right:9px;color:#fff;  font-size:12px;}
+        
+            @media screen and (max-height:850px){
+                div#divpop1{width:25%;}
+                div#divpop1 div.con_box2{width:100%;}
+            }
+            @media screen and (max-width:850px){
+            }
+            @media screen and (max-width:850px){
+            }
+            @media screen and (max-height:700px){
+                div#divpop1{width:25%;}
+                div#divpop1 div.con_box2{width:100%;}
+            }
+        </style>
+        <div id="divpop1" onload="startTime01();">
+            <form name="notice_form01">
+        
+                <div class="con_box2">
+                    <img src="../resource/image/main/popup_20220527.jpg" border="0" />
+                </div>
+        
+                <div class="bo_box">
+                    <a class="dayClose" href="javascript:void(0)" onClick="javascript:divpop_closeWin('divpop1');" value="checkbox"> <span></span>오늘 하루 이 창을 열지 않음</a>
+                    <a href="javascript:hideMe('divpop1');" class="btn_close">[닫기]</a>
+                </div>
+        
+            </form>
+        </div>
+        <!-- #################################################     팝업관련 소스 끝   ############################################################### -->
+
     </div>
 </body>
 </html>
